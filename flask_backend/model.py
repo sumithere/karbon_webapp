@@ -22,7 +22,7 @@ def total_revenue(data, financial_index: int):
     Calculate the total revenue from the financial data at the given index.
     """
     try:
-        financial = data.financials[financial_index]
+        financial = data["financials"][financial_index]
         # print(financial)
         pnl_items = financial["pnl"]["lineItems"]
         net_revenue = pnl_items["net_revenue"] 
